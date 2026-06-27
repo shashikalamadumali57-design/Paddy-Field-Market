@@ -1,0 +1,144 @@
+.footer {
+  position: relative;
+  margin-top: var(--space-20);
+}
+
+.footer-wave {
+  position: relative;
+  height: 60px;
+  overflow: hidden;
+}
+
+.footer-wave svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}
+
+.footer-wave path {
+  fill: var(--gray-900);
+}
+
+.footer-content {
+  background: var(--gray-900);
+  padding: var(--space-16) 0 var(--space-8);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: var(--space-10);
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.footer-logo-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, var(--primary-500), var(--accent-500));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.footer-logo h3 {
+  color: white;
+  font-family: var(--font-heading);
+  font-size: var(--font-xl);
+}
+
+.footer-tagline {
+  font-size: var(--font-xs);
+  color: var(--primary-400);
+  font-weight: 500;
+}
+
+.footer-desc {
+  color: var(--gray-400);
+  font-size: var(--font-sm);
+  line-height: 1.7;
+  max-width: 280px;
+}
+
+.footer-section h4 {
+  color: white;
+  font-size: var(--font-base);
+  margin-bottom: var(--space-4);
+  font-family: var(--font-heading);
+}
+
+.footer-section ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.footer-section ul li,
+.footer-section ul li a {
+  color: var(--gray-400);
+  font-size: var(--font-sm);
+  transition: color var(--transition-fast);
+}
+
+.footer-section ul li a:hover {
+  color: var(--primary-400);
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.footer-bottom {
+  margin-top: var(--space-12);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--gray-800);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom p {
+  color: var(--gray-500);
+  font-size: var(--font-sm);
+}
+
+.footer-credit {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.heart-icon {
+  color: var(--error);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: var(--space-2);
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
