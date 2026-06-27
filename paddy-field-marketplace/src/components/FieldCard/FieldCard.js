@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiMapPin, FiMaximize, FiDollarSign, FiEye } from 'react-icons/fi';
+import { FiMapPin, FiMaximize, FiEye } from 'react-icons/fi';
 import './FieldCard.css';
 
 const shapeIcons = {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useLocation, Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { io } from 'socket.io-client';
 import api from '../../services/api';
 import { useAuth } from '../../context/AuthContext';
@@ -77,6 +77,7 @@ const Chat = () => {
         socket.off('message_deleted');
       }
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [socket, currentChat]);
 
   // Fetch Conversations
